@@ -1,0 +1,5 @@
+# 基础设施即代码:使用云构建和 Terraform 的持续 Spark 集群部署简介
+
+> 原文：<https://medium.com/google-cloud/infrastructure-as-code-introduction-to-continuous-spark-cluster-deployment-with-cloud-build-and-9798a776bbb0?source=collection_archive---------0----------------------->
+
+假设您想要在 Spark 中开始构建一些数据管道，或者使用 Spark ML 实现一个模型，首先要做的是部署一个 Spark 集群，这样您可以在几分钟内轻松设置一个 [Dataproc](https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwixotCbgrjmAhWUhpEKHRgUD_gYABAAGgJjZQ&ohost=www.google.com&cid=CAESQOD2KALecwHCCPLsKYCFEAtYXr_VVy18uVUHwg8lHZ9A5bO-4um4OO_wscnynWub54oWf7pyHpeA8KNADLMGWhE&sig=AOD64_29g4fEbDeJihykyCIQQ9AIPNJvJw&q=&ved=2ahUKEwiU2smbgrjmAhWyHbkGHfDiDv0Q0Qx6BAgLEAE&adurl=) 集群，这是一个完全托管的云服务，包括 Spark、Hadoop 和 Hive。现在想象多次这样做，在其他[项目](https://cloud.google.com/resource-manager/docs/creating-managing-projects)中复制它，或者你的组织想要使你的 [Dataproc](https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwixotCbgrjmAhWUhpEKHRgUD_gYABAAGgJjZQ&ohost=www.google.com&cid=CAESQOD2KALecwHCCPLsKYCFEAtYXr_VVy18uVUHwg8lHZ9A5bO-4um4OO_wscnynWub54oWf7pyHpeA8KNADLMGWhE&sig=AOD64_29g4fEbDeJihykyCIQQ9AIPNJvJw&q=&ved=2ahUKEwiU2smbgrjmAhWyHbkGHfDiDv0Q0Qx6BAgLEAE&adurl=) 配置成为标准。
