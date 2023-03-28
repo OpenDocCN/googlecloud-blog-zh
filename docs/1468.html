@@ -1,0 +1,10 @@
+<html>
+<head>
+<title>Using CoreDNS on GKE</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1 class="translated">在GKE上使用CoreDNS</h1>
+<blockquote>原文：<a href="https://medium.com/google-cloud/using-coredns-on-gke-3973598ab561?source=collection_archive---------0-----------------------#2020-06-10">https://medium.com/google-cloud/using-coredns-on-gke-3973598ab561?source=collection_archive---------0-----------------------#2020-06-10</a></blockquote><div><div class="ds hc hd he hf hg"/><div class="hh hi hj hk hl"><div class=""/><p id="18a2" class="pw-post-body-paragraph il im ho in b io ip iq ir is it iu iv iw ix iy iz ja jb jc jd je jf jg jh ji hh bi translated">通过存根域克服kube-dns对GKE的限制</p><figure class="jk jl jm jn fd jo er es paragraph-image"><div role="button" tabindex="0" class="jp jq di jr bf js"><div class="er es jj"><img src="../Images/a1511a7cff50cee6f58d119f90f117f6.png" data-original-src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*La4_ZIfguMTcIZ8jk-dr2w.png"/></div></div></figure><p id="6448" class="pw-post-body-paragraph il im ho in b io ip iq ir is it iu iv iw ix iy iz ja jb jc jd je jf jg jh ji hh bi translated">虽然早在2018年1.11版本以来，Kubernetes的<a class="ae jv" href="https://kubernetes.io/blog/2018/07/10/coredns-ga-for-kubernetes-cluster-dns/" rel="noopener ugc nofollow" target="_blank"> CoreDNS就达到了GA </a>，但谷歌Kubernetes引擎(GKE)用户即使在1.17版本的快速通道中也无法使用kube-dns。你可以使用<a class="ae jv" href="https://github.com/coredns/deployment/tree/master/kubernetes" rel="noopener ugc nofollow" target="_blank">迁移工具</a>在现有的Kubernetes集群上轻松安装CoreDNS，但GKE不会让你删除kube-dns，因此查询最终会随机命中其中一个。</p></div></div>    
+</body>
+</html>

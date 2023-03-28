@@ -1,0 +1,10 @@
+<html>
+<head>
+<title>GKE and private registries with Self Signed Certificates</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1 class="translated">具有自签名证书的GKE和私人注册中心</h1>
+<blockquote>原文：<a href="https://medium.com/google-cloud/gke-and-private-registries-with-self-signed-certificates-b37b5fd1f982?source=collection_archive---------0-----------------------#2021-08-13">https://medium.com/google-cloud/gke-and-private-registries-with-self-signed-certificates-b37b5fd1f982?source=collection_archive---------0-----------------------#2021-08-13</a></blockquote><div><div class="ds hc hd he hf hg"/><div class="hh hi hj hk hl"><div class=""/><p id="cfef" class="pw-post-body-paragraph il im ho in b io ip iq ir is it iu iv iw ix iy iz ja jb jc jd je jf jg jh ji hh bi translated"><strong class="in hp">注意:本文提供了一种变通方法，这不是Google Cloud官方文档程序，使用风险自担，并且只能在非生产系统上使用</strong></p><h1 id="6c9e" class="jj jk ho bd jl jm jn jo jp jq jr js jt ju jv jw jx jy jz ka kb kc kd ke kf kg bi translated"><strong class="ak">我们试图解决什么问题？</strong></h1><p id="4d2f" class="pw-post-body-paragraph il im ho in b io kh iq ir is ki iu iv iw kj iy iz ja kk jc jd je kl jg jh ji hh bi translated">GKE无法从使用未由可信的<a class="ae km" href="https://en.wikipedia.org/wiki/Certificate_authority" rel="noopener ugc nofollow" target="_blank"> CA </a>签名的证书的注册表中提取图像:如果节点上的<a class="ae km" href="https://kubernetes.io/docs/reference/command-line-tools-reference/kubelet/" rel="noopener ugc nofollow" target="_blank"> kubelet </a>无法验证它试图从中提取图像的注册表的CA授权，应用程序窗格将因错误而停滞在容器创建阶段…</p></div></div>    
+</body>
+</html>

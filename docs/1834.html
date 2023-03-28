@@ -1,0 +1,10 @@
+<html>
+<head>
+<title>Display GKE logs in a text format with kubectl</title>
+<link href="../Styles/Style.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<h1 class="translated">用kubectl以文本格式显示GKE日志</h1>
+<blockquote>原文：<a href="https://medium.com/google-cloud/display-gke-logs-in-a-text-format-with-kubectl-db0169be0282?source=collection_archive---------0-----------------------#2021-03-24">https://medium.com/google-cloud/display-gke-logs-in-a-text-format-with-kubectl-db0169be0282?source=collection_archive---------0-----------------------#2021-03-24</a></blockquote><div><div class="ds gw gx gy gz ha"/><div class="hb hc hd he hf"><div class=""/><p id="38e8" class="pw-post-body-paragraph if ig hi ih b ii ij ik il im in io ip iq ir is it iu iv iw ix iy iz ja jb jc hb bi translated">如果使用GKE和云日志进行日志监控，则需要将日志打印为JSON格式，以便在云控制台上使用更有效的监控。然而，如果您在CLI上使用<strong class="ih hj"> kubectl logs </strong>来查看日志，日志将无法读取。它将每一行打印为一个JSON对象。</p><p id="0796" class="pw-post-body-paragraph if ig hi ih b ii ij ik il im in io ip iq ir is it iu iv iw ix iy iz ja jb jc hb bi translated">大多数情况下，最好使用Google Cloud Console来过滤日志并显示详细信息，但有时您希望在CLI上快速查看日志。</p><p id="96ba" class="pw-post-body-paragraph if ig hi ih b ii ij ik il im in io ip iq ir is it iu iv iw ix iy iz ja jb jc hb bi translated">为了以文本格式查看基于JSON的日志，我编写了一个简单的shell脚本。基本上，这个脚本使用<strong class="ih hj"> jq </strong>将JSON对象转换成文本。你可以在Github上访问脚本和安装细节:【https://github.com/berker/kube-gke-logs T4】</p></div></div>    
+</body>
+</html>
